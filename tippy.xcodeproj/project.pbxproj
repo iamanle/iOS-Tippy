@@ -15,7 +15,7 @@
 		8F26FAD51E6BED2C004395FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F26FAD31E6BED2C004395FC /* LaunchScreen.storyboard */; };
 		8F26FAE01E6BED2C004395FC /* tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26FADF1E6BED2C004395FC /* tippyTests.swift */; };
 		8F26FAEB1E6BED2C004395FC /* tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26FAEA1E6BED2C004395FC /* tippyUITests.swift */; };
-		8F4A2F701E6CF36F005833ED /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A2F6F1E6CF36F005833ED /* README.rtf */; };
+		8F4A2F701E6CF36F005833ED /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A2F6F1E6CF36F005833ED /* README.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		8F26FAE61E6BED2C004395FC /* tippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26FAEA1E6BED2C004395FC /* tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippyUITests.swift; sourceTree = "<group>"; };
 		8F26FAEC1E6BED2C004395FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F4A2F6F1E6CF36F005833ED /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		8F4A2F6F1E6CF36F005833ED /* README.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = README.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		8F26FABE1E6BED2B004395FC = {
 			isa = PBXGroup;
 			children = (
-				8F4A2F6F1E6CF36F005833ED /* README.rtf */,
+				8F4A2F6F1E6CF36F005833ED /* README.html */,
 				8F26FAC91E6BED2C004395FC /* tippy */,
 				8F26FADE1E6BED2C004395FC /* tippyTests */,
 				8F26FAE91E6BED2C004395FC /* tippyUITests */,
@@ -243,7 +243,7 @@
 			files = (
 				8F26FAD51E6BED2C004395FC /* LaunchScreen.storyboard in Resources */,
 				8F26FAD21E6BED2C004395FC /* Assets.xcassets in Resources */,
-				8F4A2F701E6CF36F005833ED /* README.rtf in Resources */,
+				8F4A2F701E6CF36F005833ED /* README.html in Resources */,
 				8F26FAD01E6BED2C004395FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
