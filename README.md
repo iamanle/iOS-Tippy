@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<a href="http://imgur.com/BbeamhV"><img src="http://i.imgur.com/BbeamhV.gif" title="source: imgur.com" /></a>
+<a href="http://imgur.com/E7wvlGN"><img src="http://i.imgur.com/E7wvlGN.gif" title="source: imgur.com" /></a>
 
 
 ## Notes
