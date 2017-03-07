@@ -9,20 +9,29 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-    let DEFAULT_VALUE_KEY = "defaultPercent"
+    let DEFAULT_PERCENT_KEY = "defaultPercent"
+    let DEFAULT_TIP_KEY = "defaultTip"
+    let defaults =  UserDefaults.standard
+    
     @IBOutlet weak var defaultTipField: UITextField!
+    @IBOutlet weak var defaultSplitField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        defaultTipField.placeholder = Locale.current.currencySymbol
+
+        defaultTipField.text = defaults.object(forKey: DEFAULT_PERCENT_KEY) as? String
         
-        let defaults =  UserDefaults.standard
-        let stringValue = defaults.object(forKey: DEFAULT_VALUE_KEY) as? String
-        defaultTipField.text = stringValue
+        defaultSplitField.text = defaults.object(forKey: DEFAULT_TIP_KEY) as? String
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        defaultTipField.becomeFirstResponder()
     }
     
 
@@ -37,8 +46,13 @@ class SettingsViewController: UIViewController {
     */
     
     @IBAction func updateDefaultTip(_ sender: AnyObject) {
-        let defaults =  UserDefaults.standard
-        defaults.set(defaultTipField.text, forKey: DEFAULT_VALUE_KEY)
+        defaults.set(defaultTipField.text, forKey: DEFAULT_PERCENT_KEY)
+        defaults.synchronize()
+    }
+    
+    
+    @IBAction func updateDefaultSplit(_ sender: Any) {
+        defaults.set(defaultSplitField.text, forKey: DEFAULT_TIP_KEY)
         defaults.synchronize()
     }
 }

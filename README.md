@@ -14,11 +14,14 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [ ] UI animations
 * [x] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Using locale-specific currency and currency thousands separators.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Change color theme
 
 The following **additional** features are implemented:
 - [x] Split bill to n number of people
+- [x] Default n split
+- [x] Update segment with default %
 
 ## Video Walkthrough 
 
@@ -30,8 +33,8 @@ Here's a walkthrough of implemented user stories:
 ## Notes
 
 _ The guide was not updated. A few things have changed such as:
-1) I couldn't connect another action because sender: _ sender: Any is default instead of _ sender: AnyObject
 
+1) I couldn't connect another action because sender: _ sender: Any is default instead of _ sender: AnyObject
 
 2) UserDefaults not NSUserDefaults.
 
